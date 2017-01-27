@@ -33,15 +33,19 @@ tap.test('hjson.parse', (t) => {
         '/one\/two/i':  /one\/two/i,
         'x: /foo/': {x: /foo/},
         'x: /foo/i': {x: /foo/i},
+        '[/foo/i\n]': [/foo/i],
     }
     const regexDsf = regexDsfFactory()
     const hjsonOptions = {
-        dsf: [regexDsf]
+        dsf: [regexDsf],
+        space: 0,
     }
     Object.keys(expected).forEach(hjson => {
         const actual = HJSON.parse(hjson, hjsonOptions)
         const wanted = expected[hjson]
-        t.deepEquals(actual, wanted, `'${hjson}' -> ${inspect(wanted)}`)
+        t.deepEquals(actual, wanted, `parse '${hjson}' -> ${inspect(wanted)}`)
+        const stringified = HJSON.stringify(actual, hjsonOptions).replace(/(\n|^{|}$)/g,'')
+        t.deepEquals(stringified, hjson.replace(/\n/g, ''), `stringify '${stringified}' -> ${hjson}`)
     })
     t.end()
 })
