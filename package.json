@@ -1,0 +1,37 @@
+{
+  "name": "hjson-dsf-regex",
+  "version": "0.0.1",
+  "description": "Regular expression DSF for hjson-js",
+  "main": "index.js",
+  "dependencies": {
+    "hjson": "^2.4.1",
+    "tap": "^9.0.3",
+    "tap-only": "0.0.5"
+  },
+  "devDependencies": {
+    "tap": "^9.0.3",
+    "tap-only": "0.0.5"
+  },
+  "scripts": {
+    "test": "tap -Rspec test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kba/hjson-dsf-regex.git"
+  },
+  "keywords": [
+    "hjson",
+    "dsf",
+    "regex",
+    "json"
+  ],
+  "author": "kba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kba/hjson-dsf-regex/issues"
+  },
+  "homepage": "https://github.com/kba/hjson-dsf-regex#readme",
+  "optionalDependencies": {
+    "hjson": "^2.4.1"
+  }
+}
