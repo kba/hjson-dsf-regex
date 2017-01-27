@@ -1,5 +1,5 @@
 # HJSON Regex DSF
-Parse slash-delimited regexes as RegExp
+Parse slash-delimited regexes in HJSON as RegExp
 
 ## Usage
 
