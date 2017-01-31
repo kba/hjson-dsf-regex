@@ -1,6 +1,8 @@
 # HJSON Regex DSF
 Parse slash-delimited regexes in HJSON as RegExp
 
+[![Build Status](https://travis-ci.org/kba/hjson-dsf-regex.svg?branch=master)](https://travis-ci.org/kba/hjson-dsf-regex)
+
 ## Usage
 
 ```js
