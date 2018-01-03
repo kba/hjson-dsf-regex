@@ -4,12 +4,10 @@
   "description": "Regular expression DSF for hjson-js",
   "main": "index.js",
   "dependencies": {
-    "hjson": "^2.4.1",
-    "tap": "^9.0.3",
-    "tap-only": "0.0.5"
+    "hjson": "^2.4.1"
   },
   "devDependencies": {
-    "tap": "^9.0.3",
+    "tap": "^11.0.1",
     "tap-only": "0.0.5"
   },
   "scripts": {
