@@ -1,6 +1,6 @@
 {
   "name": "hjson-dsf-regex",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Regular expression DSF for hjson-js",
   "main": "index.js",
   "dependencies": {
